@@ -8,14 +8,14 @@ app = Flask(__name__)
 def Main():
     return "<p>Hello</p>"
 
-@app.route("/image")
+'''@app.route("/image")
 def hello():
     value = request.args['color']
     imgDet = ImageDetector("Resources/images/MyPic.jpg")
     data = imgDet.getImageMat(color= value)
-    return data, 200
+    return data, 200'''
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run()
     #imgDet = ImageDetector("Resources/images/MyPic.jpg")
     #imgDet.BlurImage()
