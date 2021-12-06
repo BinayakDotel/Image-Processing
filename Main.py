@@ -1,12 +1,14 @@
 from flask import Flask, request
-import requests
+import sys      
+sys.path.append('src/')
+
 from ImageDetector import ImageDetector
 
 app = Flask(__name__)
 
-@app.route("/")
-def Main():
-    return "<p>Hello</p>"
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
 
 '''@app.route("/image")
 def hello():
