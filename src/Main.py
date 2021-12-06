@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def Main():
-    return <p>Hello</p>
+    return "<p>Hello</p>"
 
 @app.route("/image")
 def hello():
