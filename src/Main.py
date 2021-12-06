@@ -12,6 +12,6 @@ def hello():
     return data, 200
 
 if __name__=="__main__":
-    #app.run(debug=True)
-    imgDet = ImageDetector("Resources/images/MyPic.jpg")
-    imgDet.BlurImage()
+    app.run(debug=True)
+    #imgDet = ImageDetector("Resources/images/MyPic.jpg")
+    #imgDet.BlurImage()
