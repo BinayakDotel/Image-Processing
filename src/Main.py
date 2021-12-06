@@ -4,6 +4,10 @@ from ImageDetector import ImageDetector
 
 app = Flask(__name__)
 
+@app.route("/")
+def Main():
+    return {"Key":"value"}
+
 @app.route("/image")
 def hello():
     value = request.args['color']
